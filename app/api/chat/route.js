@@ -35,7 +35,7 @@ export async function POST(req) {
         controller.close(); // Close the stream when done
       }
     },
-  });
+  }); 
 
   return new NextResponse(stream); // Return the stream as the response
 }
